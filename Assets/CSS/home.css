@@ -1,3 +1,54 @@
 h1{
     background-color: aqua;
 }
+
+body, #app-container{
+    margin: auto;
+    width: 700px;
+    min-width: 300px;
+    height: auto;
+}
+
+
+
+#form-container{
+    visibility: hidden;
+    font-size: 3rem;
+    width: auto;
+    margin: auto;
+}
+
+
+#form-container:target{
+    visibility: visible;
+    transition-duration: .02ms;
+}
+
+input, textarea, select, option {
+    border: 0;
+    border-radius: 3px;
+}
+
+#task-container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-item{
+    display: flex;
+    margin: 5px;
+    background-color: lightblue;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.task-item p{
+    margin: auto;
+    padding: 5px;
+}
+
+.category-tag{
+    padding: 5px;
+}
